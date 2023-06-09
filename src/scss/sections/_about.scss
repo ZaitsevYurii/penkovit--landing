@@ -1,0 +1,64 @@
+.about {
+   padding: 80px 0;
+   overflow-y: hidden;
+   // .about__inner
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+   }
+
+   // .about__title
+
+   &__title {
+      grid-column: 1 / 2 span;
+   }
+
+   // .about__content
+
+   &__content {
+      grid-column: 5 / 12 span;
+
+   }
+
+   // .about__subtitle
+
+   &__subtitle {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 130%;
+      color: $black;
+      margin-bottom: 32px;
+
+      span {
+         color: $blue;
+      }
+   }
+
+   // .about__descr
+
+   &__text {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      justify-content: space-between;
+   }
+
+   &__descr {
+      max-width: 530px;
+
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+      color: $black;
+
+      &:first-child {
+         grid-column: 1 / 4 span;
+      }
+
+      &:last-child {
+         grid-column: 5 / 8 span;
+      }
+   }
+}
