@@ -634,4 +634,51 @@ body {
   grid-column: 5/8 span;
 }
 
+.experience {
+  padding: 80px 0;
+}
+
+.no-webp .experience__bg {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../img/experience/experience.jpg"); }
+
+.experience__bg {
+  min-height: 750px;
+  background-position: center center;
+  /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.experience__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -moz-column-gap: 266px;
+       column-gap: 266px;
+}
+
+.experience__item {
+  padding-top: 32px;
+}
+
+.experience__number {
+  display: block;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.experience__descr {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
 .webp .header { background-image: url(../../img/header/header-bg.webp); }
+
+.webp .experience__bg { background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../img/experience/experience.webp); }

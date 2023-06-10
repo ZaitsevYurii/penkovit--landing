@@ -1,0 +1,53 @@
+.experience {
+   padding: 80px 0;
+   // .experience__bg
+
+   &__bg {
+      min-height: 750px;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../../img/experience/experience.jpg');
+      background-position: center center;
+      /* x y */
+      background-size: cover;
+      background-repeat: no-repeat;
+
+   }
+
+   // .experience__list
+
+   &__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      column-gap: 266px;
+   }
+
+   // .experience__item
+
+   &__item {
+      padding-top: 32px;
+   }
+
+   // .experience__number
+
+   &__number {
+      display: block;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 100px;
+      line-height: 100%;
+      color: $black;
+      margin-bottom: 14px;
+   }
+
+   // .experience__descr
+
+   &__descr {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      color: $black;
+   }
+}
+
+.container {}
