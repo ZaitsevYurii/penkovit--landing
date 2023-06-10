@@ -1,0 +1,23 @@
+.second-link {
+   width: 187px;
+   height: 187px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 1.5px solid rgb(33, 70, 141, 0.74);
+   border-radius: 50%;
+
+   font-family: $main-font;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: $blue;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background-color: rgb(33, 70, 141, 0.2);
+   }
+}
