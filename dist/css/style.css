@@ -530,6 +530,63 @@ body {
   height: 129px;
 }
 
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(434px, 1fr));
+  grid-gap: 20px;
+}
+
+.service-cards__item {
+  min-height: 434px;
+  padding: 62px 32px;
+  border: 1px solid #DFDDDD;
+  transition: all 0.3s ease-in;
+}
+
+.service-cards__item:hover {
+  border: 1px solid #878787;
+}
+
+.service-cards__item:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-cards__item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.no-webp .service-cards__item:last-child {
+  background-image: url("../../img/cards/card-bg.jpg"); }
+
+.service-cards__item:last-child {
+  background-color: #fff;
+  background-position: center center;
+  /* x y */
+  background-size: 404px;
+  background-repeat: no-repeat;
+}
+
+.service-cards__title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.service-cards__descr {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5F5F5F;
+}
+
 .main-link {
   font-family: "Gilroy", sans-serif;
   font-weight: 600;
@@ -678,6 +735,37 @@ body {
   line-height: 28px;
   color: #000000;
 }
+
+.services {
+  padding: 80px 0;
+}
+
+.services__inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.services__title-box {
+  grid-column: 1/4 span;
+}
+
+.services__title {
+  margin-bottom: 32px;
+}
+
+.services__descr {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.services__cards {
+  grid-column: 7/12 span;
+}
+
+.webp .service-cards__item:last-child { background-image: url(../../img/cards/card-bg.webp); }
 
 .webp .header { background-image: url(../../img/header/header-bg.webp); }
 

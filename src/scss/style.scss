@@ -6,6 +6,8 @@
 @import "base/scafolding";
 @import "base/base";
 
+@import "blocks/service-cards";
+
 @import "elements/main-link";
 @import "elements/title";
 
@@ -13,4 +15,6 @@
 @import "sections/main";
 @import "sections/about";
 @import "sections/experience";
+@import "sections/services";
+
 @import "sections/footer";
