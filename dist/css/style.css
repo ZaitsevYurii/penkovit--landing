@@ -847,8 +847,116 @@ body {
   color: #21468D;
 }
 
+.blog {
+  padding: 80px 0;
+  position: relative;
+}
+
+.no-webp .blog::before {
+  background-image: url("../img/blog/blog-bg.png"); }
+
+.blog::before {
+  content: "";
+  z-index: -999;
+  position: absolute;
+  left: 0px;
+  bottom: -65px;
+  width: 496px;
+  height: 848px;
+  background-repeat: no-repeat;
+}
+
+.blog__inner {
+  padding-bottom: 180px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #DFDDDD;
+}
+
+.blog__title {
+  margin-top: -30px;
+}
+
+.blog__content {
+  max-width: 890px;
+}
+
+.blog__descr {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 110px;
+}
+
+.blog-list__item {
+  padding: 20px 0 40px 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: relative;
+}
+
+.no-webp .blog-list__item:first-child::before {
+  background-image: url("../img/blog/blog.jpg"); }
+
+.blog-list__item:first-child::before {
+  content: "";
+  position: absolute;
+  left: -303px;
+  top: 0px;
+  width: 260px;
+  height: 230px;
+  background-repeat: no-repeat;
+}
+
+.blog-list__left {
+  grid-column: 1/2 span;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-list__title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.blog-list__date {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #5F5F5F;
+}
+
+.blog-list__right {
+  grid-column: 4/6 span;
+}
+
+.blog-list__descr {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #5F5F5F;
+}
+
+.blog-list__descr:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .webp .service-cards__item:last-child { background-image: url(../img/cards/card-bg.webp); }
 
 .webp .header { background-image: url(../img/header/header-bg.webp); }
 
 .webp .experience__bg { background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/experience/experience.webp); }
+
+.webp .blog::before { background-image: url(../img/blog/blog-bg.webp); }
+
+.webp .blog-list__item:first-child::before { background-image: url(../img/blog/blog.webp); }

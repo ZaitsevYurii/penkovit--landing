@@ -1,0 +1,132 @@
+.blog {
+   padding: 80px 0;
+   position: relative;
+
+   &::before {
+      content: "";
+      z-index: -999;
+      position: absolute;
+      left: 0px;
+      bottom: -65px;
+      width: 496px;
+      height: 848px;
+
+      background-image: url('../img/blog/blog-bg.png');
+      background-repeat: no-repeat;
+
+   }
+
+   // .blog__inner
+
+   &__inner {
+      padding-bottom: 180px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #DFDDDD;
+   }
+
+   // .blog__title
+
+   &__title {
+      margin-top: -30px;
+   }
+
+   // .blog__content
+
+   &__content {
+      max-width: 890px;
+   }
+
+   // .blog__descr
+
+   &__descr {
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: $black;
+      margin-bottom: 110px;
+   }
+
+   // .blog__list
+
+   &__list {}
+}
+
+.blog-list {
+
+   // .blog-list__item
+
+   &__item {
+      padding: 20px 0 40px 0;
+      border-top: 2px solid $black;
+      border-bottom: 2px solid $black;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      position: relative;
+
+      &:first-child::before {
+         content: "";
+
+         position: absolute;
+         left: -303px;
+         top: 0px;
+         width: 260px;
+         height: 230px;
+
+         background-image: url('../img/blog/blog.jpg');
+         background-repeat: no-repeat;
+
+      }
+
+   }
+
+   // .blog-list__left
+
+   &__left {
+      grid-column: 1 / 2 span;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   // .blog-list__title
+
+   &__title {
+      font-family: $main-font;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      color: $black;
+   }
+
+   // .blog-list__date
+
+   &__date {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+      color: $grey-dark;
+   }
+
+   // .blog-list__right
+
+   &__right {
+      grid-column: 4 / 6 span;
+   }
+
+   // .blog-list__descr
+
+   &__descr {
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: $grey-dark;
+
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+   }
+}
