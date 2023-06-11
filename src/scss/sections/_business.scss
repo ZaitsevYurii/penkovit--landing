@@ -1,0 +1,25 @@
+.business {
+   padding: 200px 0;
+   // .business__inner
+
+   &__inner {
+      display: flex;
+      gap: 106px;
+   }
+
+   // .business__descr
+
+   &__descr {
+      max-width: 1259px;
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 56px;
+      color: $black;
+
+      span {
+         color: $blue;
+      }
+   }
+
+}
